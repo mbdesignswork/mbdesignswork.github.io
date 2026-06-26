@@ -103,9 +103,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 22px;
   color: rgba(255, 255, 255, 0.76);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -128,14 +128,17 @@ img {
   border-radius: 999px;
   color: white;
   background: var(--blue);
+  border: 2px solid #93c5fd;
   font-weight: 900;
   font-size: 0.9rem;
-  transition: transform 0.18s ease, background 0.18s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
 }
 
 .nav-cta:hover {
   transform: translateY(-1px);
   background: #1d4ed8;
+  border-color: white;
 }
 
 .screen-section {
@@ -229,12 +232,13 @@ h4 {
   min-height: 48px;
   padding: 13px 20px;
   border-radius: 999px;
-  border: 1px solid transparent;
+  border: 2px solid currentColor;
   font-weight: 900;
   text-align: center;
   line-height: 1.15;
   cursor: pointer;
-  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .btn:hover {
@@ -244,22 +248,39 @@ h4 {
 .btn-primary {
   background: var(--blue);
   color: white;
+  border-color: #93c5fd;
   box-shadow: 0 14px 30px rgba(37, 99, 235, 0.26);
 }
 
 .btn-primary:hover {
   background: #1d4ed8;
+  border-color: white;
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.32);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.06);
-  color: inherit;
-  border-color: rgba(255, 255, 255, 0.2);
+  background: white;
+  color: var(--ink);
+  border-color: #94a3b8;
 }
 
 .btn-secondary:hover {
-  border-color: rgba(96, 165, 250, 0.8);
-  background: rgba(96, 165, 250, 0.12);
+  background: var(--blue-soft);
+  color: #0f172a;
+  border-color: var(--blue);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.16);
+}
+
+.hero .btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.46);
+}
+
+.hero .btn-secondary:hover {
+  background: rgba(96, 165, 250, 0.18);
+  border-color: var(--blue-light);
+  color: white;
 }
 
 .full-width {
@@ -397,6 +418,139 @@ h4 {
   font-weight: 900;
 }
 
+.about-section {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(37, 99, 235, 0.1), transparent 28%),
+    linear-gradient(180deg, var(--page) 0%, #ffffff 100%);
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.55fr);
+  gap: clamp(28px, 5vw, 58px);
+  align-items: stretch;
+  padding: clamp(28px, 4vw, 44px);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-copy {
+  max-width: 800px;
+}
+
+.about-copy p {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.about-side {
+  display: grid;
+  gap: 16px;
+}
+
+.builder-card {
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 80% 12%, rgba(96, 165, 250, 0.24), transparent 35%),
+    linear-gradient(135deg, #0b1020 0%, #111827 100%);
+  color: white;
+  border: 1px solid rgba(96, 165, 250, 0.28);
+  box-shadow: var(--shadow-strong);
+}
+
+.builder-initials {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  background: rgba(96, 165, 250, 0.18);
+  border: 1px solid rgba(147, 197, 253, 0.4);
+  color: var(--blue-light);
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.builder-card h3 {
+  margin-bottom: 6px;
+  color: white;
+}
+
+.builder-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.proof-note {
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  background: var(--surface-2);
+  border: 1px solid #cbd9ee;
+}
+
+.proof-note strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.proof-note span {
+  display: block;
+  color: var(--muted);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.trust-card {
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+}
+
+.trust-card span {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--blue);
+  font-weight: 900;
+  font-size: 1.15rem;
+}
+
+.trust-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.portfolio-note {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(26px, 5vw, 58px);
+  align-items: center;
+  margin-top: 22px;
+  padding: clamp(26px, 4vw, 38px);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, #eef4ff 0%, #ffffff 100%);
+  border: 1px solid #cbd9ee;
+}
+
+.portfolio-note p {
+  color: var(--muted);
+}
+
+.portfolio-note p:last-child {
+  margin-bottom: 0;
+}
+
 .section-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
@@ -429,7 +583,7 @@ h4 {
 }
 
 .services-section {
-  background: linear-gradient(180deg, var(--page) 0%, var(--surface-2) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, var(--surface-2) 100%);
 }
 
 .section-heading {
@@ -610,18 +764,28 @@ h4 {
 }
 
 .faq-layout {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
-  gap: clamp(32px, 6vw, 72px);
-  align-items: start;
+  display: block;
 }
 
 .faq-heading {
-  position: sticky;
-  top: calc(var(--header-height) + 28px);
+  position: static;
+  max-width: 780px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.faq-heading h2 {
+  margin-bottom: 12px;
+}
+
+.faq-heading p {
+  max-width: 620px;
+  margin-inline: auto;
 }
 
 .faq-list {
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
   gap: 12px;
 }
@@ -725,7 +889,8 @@ details p {
   .hero-grid,
   .section-grid,
   .value-card,
-  .faq-layout,
+  .about-card,
+  .portfolio-note,
   .contact-card {
     grid-template-columns: 1fr;
   }
@@ -738,12 +903,9 @@ details p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .process-grid {
+  .process-grid,
+  .trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .faq-heading {
-    position: static;
   }
 
   .service-summary,
@@ -801,7 +963,8 @@ details p {
   }
 
   .services-grid,
-  .process-grid {
+  .process-grid,
+  .trust-grid {
     grid-template-columns: 1fr;
   }
 
@@ -818,91 +981,13 @@ details p {
     columns: 1;
   }
 
-  .contact-card {
+  .contact-card,
+  .about-card,
+  .portfolio-note {
     padding: 26px;
   }
 
   .footer-content {
     flex-direction: column;
   }
-}
-
-/* Stronger button visibility */
-.btn {
-  border: 2px solid currentColor;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
-}
-
-.btn-primary {
-  border-color: #93c5fd;
-  background: var(--blue);
-  color: white;
-}
-
-.btn-primary:hover {
-  background: #1d4ed8;
-  border-color: white;
-  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.32);
-}
-
-.btn-secondary {
-  background: white;
-  color: var(--ink);
-  border-color: #94a3b8;
-}
-
-.btn-secondary:hover {
-  background: var(--blue-soft);
-  color: #0f172a;
-  border-color: var(--blue);
-  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.16);
-}
-
-/* Hero secondary button stays dark-theme friendly */
-.hero .btn-secondary {
-  background: rgba(255, 255, 255, 0.08);
-  color: white;
-  border-color: rgba(255, 255, 255, 0.46);
-}
-
-.hero .btn-secondary:hover {
-  background: rgba(96, 165, 250, 0.18);
-  border-color: var(--blue-light);
-  color: white;
-}
-
-/* Navbar quote button */
-.nav-cta {
-  border: 2px solid #93c5fd;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
-}
-
-.nav-cta:hover {
-  border-color: white;
-}
-
-/* FAQ cleaner stacked layout */
-.faq-layout {
-  display: block;
-}
-
-.faq-heading {
-  position: static;
-  max-width: 780px;
-  margin: 0 auto 30px;
-  text-align: center;
-}
-
-.faq-heading h2 {
-  margin-bottom: 12px;
-}
-
-.faq-heading p {
-  max-width: 620px;
-  margin-inline: auto;
-}
-
-.faq-list {
-  max-width: 900px;
-  margin: 0 auto;
 }
