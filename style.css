@@ -3763,3 +3763,557 @@ body.no-scroll {
 .project-note {
   box-shadow: none !important;
 }
+
+
+/* V10 FINAL: clean service cards, visible text, aligned payment area, no button shadow */
+.services-grid.services-grid-wide.clean-services {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card,
+.services-grid.services-grid-wide.clean-services .service-card.compact-card,
+.services-grid.services-grid-wide.clean-services .service-card.featured {
+  width: 100% !important;
+  min-height: 660px !important;
+  height: auto !important;
+  max-height: none !important;
+  padding: clamp(22px, 2.1vw, 30px) !important;
+  border-radius: 28px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 22px !important;
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-content {
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  gap: 0 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-top,
+.services-grid.services-grid-wide.clean-services .service-meta {
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-meta {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 0 18px !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-tag,
+.services-grid.services-grid-wide.clean-services .service-start {
+  width: auto !important;
+  max-width: 100% !important;
+  min-height: 30px !important;
+  height: auto !important;
+  padding: 7px 13px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  line-height: 1 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-start {
+  flex: 0 0 auto !important;
+  min-width: 86px !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-top h3 {
+  min-height: 66px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 0 16px !important;
+  display: block !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: initial !important;
+  font-size: clamp(1.38rem, 1.68vw, 1.72rem) !important;
+  line-height: 1.12 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-summary,
+.services-grid.services-grid-wide.clean-services .compact-card .service-summary {
+  min-height: 126px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 0 20px !important;
+  display: block !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: initial !important;
+  line-height: 1.46 !important;
+  font-size: clamp(0.98rem, 1.04vw, 1.08rem) !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-content h4 {
+  min-height: 24px !important;
+  height: auto !important;
+  margin: 0 0 12px !important;
+  display: block !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card ul {
+  min-height: 174px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding-left: 21px !important;
+  display: block !important;
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card li {
+  margin: 0 0 10px !important;
+  padding-left: 3px !important;
+  display: list-item !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: initial !important;
+  line-height: 1.42 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-action {
+  min-height: 154px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin-top: auto !important;
+  padding-top: 18px !important;
+  border-top: 1px solid var(--line) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .native-pay-wrap,
+.services-grid.services-grid-wide.clean-services .service-card.featured .native-pay-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  align-self: stretch !important;
+  box-shadow: none !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-pay-btn,
+.services-grid.services-grid-wide.clean-services .service-pay-btn:hover,
+.services-grid.services-grid-wide.clean-services .service-pay-btn:focus-visible {
+  width: 100% !important;
+  min-height: 56px !important;
+  height: auto !important;
+  padding: 13px 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: normal !important;
+  line-height: 1.14 !important;
+  box-shadow: none !important;
+}
+
+.services-grid.services-grid-wide.clean-services .payment-note {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 44px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  text-align: center !important;
+  display: block !important;
+  overflow: visible !important;
+  line-height: 1.38 !important;
+  box-shadow: none !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-secondary-link {
+  min-height: 22px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: normal !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1180px) {
+  .services-grid.services-grid-wide.clean-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-card,
+  .services-grid.services-grid-wide.clean-services .service-card.compact-card,
+  .services-grid.services-grid-wide.clean-services .service-card.featured {
+    min-height: 660px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .services-grid.services-grid-wide.clean-services {
+    grid-template-columns: 1fr !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-card,
+  .services-grid.services-grid-wide.clean-services .service-card.compact-card,
+  .services-grid.services-grid-wide.clean-services .service-card.featured {
+    min-height: 0 !important;
+    padding: 22px !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-top h3,
+  .services-grid.services-grid-wide.clean-services .service-summary,
+  .services-grid.services-grid-wide.clean-services .service-card ul,
+  .services-grid.services-grid-wide.clean-services .service-action,
+  .services-grid.services-grid-wide.clean-services .payment-note {
+    min-height: 0 !important;
+  }
+}
+
+
+/* V11 FINAL: service button alignment hard fix
+   Cards use the same row sizing, the action area is pinned to the bottom,
+   and every payment button uses the same height/width with no shadow. */
+.services-grid.services-grid-wide.clean-services {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+  grid-auto-rows: 1fr !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card,
+.services-grid.services-grid-wide.clean-services .service-card.compact-card,
+.services-grid.services-grid-wide.clean-services .service-card.featured {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 700px !important;
+  max-height: none !important;
+  padding: clamp(22px, 2.1vw, 30px) !important;
+  display: grid !important;
+  grid-template-rows: minmax(0, 1fr) auto !important;
+  gap: 22px !important;
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-content {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: visible !important;
+  gap: 0 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-top,
+.services-grid.services-grid-wide.clean-services .service-meta {
+  min-width: 0 !important;
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-meta {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 0 18px !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-tag,
+.services-grid.services-grid-wide.clean-services .service-start {
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-height: 30px !important;
+  height: 30px !important;
+  margin: 0 !important;
+  padding: 7px 13px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: 1 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-start {
+  min-width: 86px !important;
+  justify-self: end !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-top h3 {
+  min-height: 70px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 0 16px !important;
+  display: block !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: initial !important;
+  font-size: clamp(1.32rem, 1.58vw, 1.64rem) !important;
+  line-height: 1.14 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-summary,
+.services-grid.services-grid-wide.clean-services .compact-card .service-summary {
+  min-height: 128px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 0 20px !important;
+  display: block !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: initial !important;
+  font-size: clamp(0.96rem, 1.02vw, 1.05rem) !important;
+  line-height: 1.46 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-content h4 {
+  min-height: 24px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 0 12px !important;
+  display: block !important;
+  overflow: visible !important;
+  font-size: 0.95rem !important;
+  line-height: 1.2 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card ul {
+  min-height: 192px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding-left: 21px !important;
+  display: block !important;
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card li {
+  margin: 0 0 10px !important;
+  padding-left: 3px !important;
+  display: list-item !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: initial !important;
+  font-size: clamp(0.92rem, 0.98vw, 1rem) !important;
+  line-height: 1.4 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-card li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-action {
+  width: 100% !important;
+  min-height: 154px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding-top: 18px !important;
+  border-top: 1px solid var(--line) !important;
+  display: grid !important;
+  grid-template-rows: 56px minmax(42px, auto) 22px !important;
+  gap: 10px !important;
+  align-content: start !important;
+  overflow: visible !important;
+}
+
+.services-grid.services-grid-wide.clean-services .native-pay-wrap,
+.services-grid.services-grid-wide.clean-services .service-card.featured .native-pay-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  height: 56px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: stretch !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-pay-btn,
+.services-grid.services-grid-wide.clean-services .service-pay-btn:visited,
+.services-grid.services-grid-wide.clean-services .service-pay-btn:hover,
+.services-grid.services-grid-wide.clean-services .service-pay-btn:focus,
+.services-grid.services-grid-wide.clean-services .service-pay-btn:focus-visible,
+.services-grid.services-grid-wide.clean-services .service-pay-btn:active {
+  width: 100% !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  max-height: 56px !important;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: normal !important;
+  line-height: 1.12 !important;
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.services-grid.services-grid-wide.clean-services .payment-note {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 42px !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  text-align: center !important;
+  display: block !important;
+  overflow: visible !important;
+  font-size: 0.9rem !important;
+  line-height: 1.36 !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.services-grid.services-grid-wide.clean-services .service-secondary-link {
+  min-height: 22px !important;
+  height: 22px !important;
+  max-height: 22px !important;
+  margin: 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 1180px) {
+  .services-grid.services-grid-wide.clean-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    grid-auto-rows: 1fr !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-card,
+  .services-grid.services-grid-wide.clean-services .service-card.compact-card,
+  .services-grid.services-grid-wide.clean-services .service-card.featured {
+    min-height: 700px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .services-grid.services-grid-wide.clean-services {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    grid-auto-rows: auto !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-card,
+  .services-grid.services-grid-wide.clean-services .service-card.compact-card,
+  .services-grid.services-grid-wide.clean-services .service-card.featured {
+    min-height: 690px !important;
+    padding: 22px !important;
+    gap: 20px !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-meta {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    gap: 8px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-tag,
+  .services-grid.services-grid-wide.clean-services .service-start {
+    height: 28px !important;
+    min-height: 28px !important;
+    padding: 6px 10px !important;
+    font-size: 0.68rem !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-start {
+    min-width: 78px !important;
+    font-size: 0.74rem !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-top h3 {
+    min-height: 66px !important;
+    margin-bottom: 14px !important;
+    font-size: clamp(1.28rem, 6vw, 1.52rem) !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-summary,
+  .services-grid.services-grid-wide.clean-services .compact-card .service-summary {
+    min-height: 118px !important;
+    margin-bottom: 18px !important;
+    font-size: 0.98rem !important;
+    line-height: 1.42 !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-card ul {
+    min-height: 190px !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-card li {
+    font-size: 0.94rem !important;
+    line-height: 1.36 !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-action {
+    min-height: 152px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .services-grid.services-grid-wide.clean-services .service-card,
+  .services-grid.services-grid-wide.clean-services .service-card.compact-card,
+  .services-grid.services-grid-wide.clean-services .service-card.featured {
+    min-height: 720px !important;
+    padding: 20px !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-top h3 {
+    min-height: 72px !important;
+    font-size: 1.22rem !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-summary,
+  .services-grid.services-grid-wide.clean-services .compact-card .service-summary {
+    min-height: 130px !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-card ul {
+    min-height: 210px !important;
+  }
+
+  .services-grid.services-grid-wide.clean-services .service-pay-btn {
+    font-size: 0.95rem !important;
+  }
+}
