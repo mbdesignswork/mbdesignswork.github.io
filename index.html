@@ -20,6 +20,48 @@
 
   <link rel="stylesheet" href="style.css?v=14" />
 
+  <style>
+    .hero-intro-call {
+      max-width: 780px;
+      margin: 28px 0 34px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.045);
+      color: rgba(255, 255, 255, 0.78);
+      font-size: clamp(1rem, 1.2vw, 1.125rem);
+      line-height: 1.65;
+    }
+
+    .hero-intro-call strong {
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 700;
+    }
+
+    .hero-intro-call a {
+      color: #4f7dff;
+      font-size: inherit;
+      font-weight: 800;
+      line-height: inherit;
+      text-decoration: none;
+    }
+
+    .hero-intro-call a:hover,
+    .hero-intro-call a:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 700px) {
+      .hero-intro-call {
+        margin: 22px 0 28px;
+        padding: 14px 16px;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+  </style>
+
   <script
     type="module"
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
@@ -66,6 +108,12 @@
             <a href="#contact" class="btn btn-primary">Request a project quote</a>
             <a href="#services" class="btn btn-secondary">View services</a>
           </div>
+
+          <p class="hero-intro-call">
+            <strong>Not ready for a quote?</strong>
+            <a href="#contact">Request a free 20-minute intro call</a>
+            to briefly discuss your project and see whether MB Designs Work is a good fit.
+          </p>
 
           <div class="hero-points">
             <span>Consumer electronics</span>
@@ -1115,6 +1163,8 @@
           <p>
             Send a short message with the project goal, what you already have, and what you need help with.
             You can attach photos, files, sketches, measurements, links, or anything else related to the project.
+            You can also request a free 20-minute intro call for a brief project introduction and fit check.
+            Detailed technical review, troubleshooting, and design advice are handled through the paid consultation or project support services.
           </p>
         </div>
 
