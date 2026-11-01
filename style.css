@@ -875,29 +875,177 @@ h4 {
   color: rgba(255, 255, 255, 0.72);
 }
 
+/* Scope: full-width introduction, compact examples, and paired content cards. */
+.scope-header {
+  max-width: 920px;
+  margin-bottom: 32px;
+}
+
+.scope-header h2 {
+  max-width: 27ch;
+  text-wrap: balance;
+}
+
+.scope-header > p:last-child {
+  max-width: 85ch;
+  margin-bottom: 0;
+  font-size: 1.04rem;
+  line-height: 1.65;
+}
+
+.scope-examples {
+  margin-bottom: 28px;
+  padding: 24px 0;
+  border-block: 1px solid rgba(147, 197, 253, 0.2);
+}
+
+.scope-examples h3 {
+  margin-bottom: 16px;
+  color: #bfdbfe;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.scope-examples ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scope-examples li {
+  position: relative;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.94rem;
+}
+
+.scope-examples li::before {
+  content: "";
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--blue-light);
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
 .scope-card {
-  padding: 28px;
-  border-radius: var(--radius-xl);
-  background: rgba(255, 255, 255, 0.075);
-  border: 1px solid rgba(96, 165, 250, 0.24);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(22px, 2.5vw, 30px);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(96, 165, 250, 0.22);
 }
 
 .scope-card h3 {
-  margin-top: 24px;
+  margin: 0 0 16px;
+  max-width: 35ch;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
-.scope-card ul {
+.scope-card p {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.scope-details {
+  margin-top: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  border-top: 1px solid rgba(147, 197, 253, 0.18);
+}
+
+.scope-details summary {
+  position: relative;
+  min-height: 44px;
+  padding: 16px 30px 2px 0;
+  color: #93c5fd;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+}
+
+.scope-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.scope-details summary::after {
+  color: currentColor;
+  content: "+";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.scope-details[open] summary::after {
+  content: "−";
+}
+
+.scope-details summary:hover {
+  color: white;
+}
+
+.scope-details summary:focus-visible {
+  outline: 2px solid var(--blue-light);
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+
+.scope-details-body {
+  padding-top: 16px;
+}
+
+.scope-details-body p {
+  padding: 0;
   margin: 0;
-  padding-left: 18px;
-  columns: 2;
-  column-gap: 28px;
 }
 
-.scope-card li {
-  break-inside: avoid;
-  margin-bottom: 8px;
-  color: rgba(255, 255, 255, 0.74);
+@media (max-width: 900px) {
+  .scope-examples ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
+
+@media (max-width: 760px) {
+  .scope-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .scope-header {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scope-examples ul {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+}
+
 
 /* Pricing */
 

@@ -18,7 +18,7 @@
   <link rel="shortcut icon" href="assets/logo.png?v=4" />
   <link rel="apple-touch-icon" href="assets/logo.png?v=4" />
 
-  <link rel="stylesheet" href="style.css?v=18" />
+  <link rel="stylesheet" href="style.css?v=19" />
 
   <style>
     .hero-intro-call {
@@ -929,21 +929,19 @@
       </div>
     </section>
 
-    <section class="section dark-section" id="scope">
-      <div class="site-width section-grid">
-        <div class="section-copy">
+    <section class="section dark-section scope-section" id="scope" aria-labelledby="scope-heading">
+      <div class="site-width">
+        <header class="scope-header">
           <p class="eyebrow">Capabilities &amp; service limits</p>
-          <h2>Clear scope, defined deliverables and documented testing.</h2>
-        </div>
-
-        <div class="scope-card">
+          <h2 id="scope-heading">Clear scope, defined deliverables and documented testing.</h2>
           <p>
             MB Designs Work supports electronics and prototype projects across the build path:
             product circuits, PCB prototypes, sensor boards, motor/control hardware, Bluetooth/IoT modules,
             embedded firmware, test fixtures, enclosures, CAD parts, 3D printed parts, repairs, and board recreation.
           </p>
-
-          <h3>Project examples</h3>
+        </header>
+        <div class="scope-examples" aria-labelledby="scope-examples-heading">
+          <h3 id="scope-examples-heading">Project examples</h3>
           <ul>
             <li>Consumer and product electronics</li>
             <li>Custom circuit and PCB projects</li>
@@ -952,59 +950,65 @@
             <li>PCB review, debug and embedded firmware</li>
             <li>CAD, enclosures, fixtures, and 3D printed parts</li>
           </ul>
-
-          <h3>Project fit and testing</h3>
-          <p>
+        </div>
+        <div class="scope-grid">
+          <article class="scope-card">
+            <h3>Project fit and testing</h3>
+            <p>
             Each project is assessed for its intended use, technical requirements, consequences of failure,
             testing needs and available resources. Deliverables, exclusions, testing and scheduling are agreed
             before acceptance. These limits apply to both project work and monthly support.
           </p>
-          <h3>Work outside our service scope</h3>
-          <p class="scope-note">
-            Services do not include professional engineering seals, product certification, regulatory approval,
-            or independent safety sign-offs. Flight-critical, life-support, and safety-critical vehicle-control
-            work is outside the current service scope.
-          </p>
-          <p>
-            Independent safety audits, complete-product safety approval and commercial-release sign-off
-            are not offered. Work requiring specialist capabilities, testing or regulated sign-off beyond
-            the agreed service is referred out or declined.
-          </p>
-
-          <h3>Established ICs, reference designs and modules</h3>
-          <p>
+            <details class="scope-details"><summary>What prototype testing establishes</summary><div class="scope-details-body"><p>
+            Bench results apply to the documented board revision, functions, test conditions and samples.
+            Passing those checks is not certification, a complete safety assessment or a guarantee of performance
+            under every operating condition.
+          </p></div></details>
+          </article>
+          <article class="scope-card">
+            <h3>Established ICs, reference designs and modules</h3>
+            <p>
             Battery charging, power conversion, mains-module integration and other electronics work can
             use established ICs, manufacturer reference designs and appropriately certified or recognized
             modules. Projects are assessed case by case, based on their complexity, operating conditions
             and available testing.
           </p>
-          <p>
+            <details class="scope-details"><summary>Integration requirements</summary><div class="scope-details-body"><p>
             Design and integration follow the selected components' datasheets, application guidance,
             layout requirements and applicable conditions of acceptability. The surrounding circuit,
             protection, wiring, enclosure and thermal design still need to suit the application.
             A component's protection features or approval mark do not certify the complete product.
+          </p></div></details>
+          </article>
+          <article class="scope-card">
+            <h3>Work outside our service scope</h3>
+            <p>
+            Services do not include professional engineering seals, product certification, regulatory approval,
+            or independent safety sign-offs. Flight-critical, life-support, and safety-critical vehicle-control
+            work is outside the current service scope.
           </p>
-
-          <h3>What prototype testing establishes</h3>
-          <p>
-            Bench results apply to the documented board revision, functions, test conditions and samples.
-            Passing those checks is not certification, a complete safety assessment or a guarantee of performance
-            under every operating condition.
+            <p>
+            Independent safety audits, complete-product safety approval and commercial-release sign-off
+            are not offered. Work requiring specialist capabilities, testing or regulated sign-off beyond
+            the agreed service is referred out or declined.
           </p>
-          <h3>Client review, certification and release</h3>
-          <p>
+          </article>
+          <article class="scope-card">
+            <h3>Client review, certification and release</h3>
+            <p>
             Clients arrange the qualified professionals, testing laboratories or certification bodies
             required for their product and intended markets. Final product approval, required certification
             and release to production or public use are the client's responsibility. Any legally required
             professional supervision or authorization for the design work must be in place before that work begins.
           </p>
-          <p>
+            <details class="scope-details"><summary>MB’s design and testing responsibilities</summary><div class="scope-details-body"><p>
             MB Designs Work is responsible for performing its agreed design and prototype tasks with reasonable
             care and documenting the agreed checks, assumptions and known limitations. Manufacturing files
             and successful bench tests are not a complete-product safety or release approval.
             Production firmware validation, full-system verification and ongoing production quality assurance
             are not included in standard prototype support.
-          </p>
+          </p></div></details>
+          </article>
         </div>
       </div>
     </section>
