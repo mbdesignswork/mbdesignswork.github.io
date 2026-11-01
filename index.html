@@ -18,7 +18,7 @@
   <link rel="shortcut icon" href="assets/logo.png?v=4" />
   <link rel="apple-touch-icon" href="assets/logo.png?v=4" />
 
-  <link rel="stylesheet" href="style.css?v=19" />
+  <link rel="stylesheet" href="style.css?v=20" />
 
   <style>
     .hero-intro-call {
@@ -1013,50 +1013,74 @@
       </div>
     </section>
 
-    <section class="section pricing-section" id="pricing">
-      <div class="site-width section-grid">
-        <div class="section-copy">
+    <section class="section pricing-section" id="pricing" aria-labelledby="pricing-heading">
+      <div class="site-width">
+        <header class="pricing-heading">
           <p class="eyebrow">Rates &amp; billing</p>
-          <h2>Choose monthly support or project-based work.</h2>
+          <h2 id="pricing-heading">Choose how we work together.</h2>
+          <p>Monthly support for ongoing work. Prepaid hourly support for individual projects. All prices in Canadian dollars (CAD).</p>
+        </header>
+
+        <div class="pricing-options">
+          <article class="rate-card rate-card-monthly" aria-labelledby="monthly-rate-heading">
+            <div class="rate-card-header">
+              <p class="rate-label">Ongoing support</p>
+              <h3 id="monthly-rate-heading">Monthly design support</h3>
+              <p class="rate-price">CA$750 <span>/ month</span></p>
+              <p class="rate-allocation">10 hours of reserved capacity each month</p>
+            </div>
+            <div class="rate-card-content">
+              <h4>What you get</h4>
+              <ul class="rate-inclusions">
+                <li>Reserved capacity for ongoing design and support</li>
+                <li>An agreed task list and tracked time</li>
+                <li>A monthly progress summary</li>
+              </ul>
+              <div class="rate-terms">
+                <h4>Before enrollment</h4>
+                <p>Billing dates, cancellation, unused-hour treatment and scheduling are confirmed in your subscription agreement before enrollment.</p>
+              </div>
+            </div>
+            <a class="btn btn-primary rate-cta" href="#monthly-support">See the monthly plan</a>
+          </article>
+
+          <article class="rate-card" aria-labelledby="hourly-rate-heading">
+            <div class="rate-card-header">
+              <p class="rate-label">Individual projects</p>
+              <h3 id="hourly-rate-heading">Hourly project work</h3>
+              <p class="rate-price"><span class="rate-from">From</span> CA$70 <span>/ hour</span></p>
+              <p class="rate-allocation">New-client rate &middot; Prepaid project credit</p>
+            </div>
+            <div class="rate-card-content">
+              <div class="rate-credit">
+                <h4>Initial payment</h4>
+                <p><strong>CA$140 for 2 hours</strong><span>Prepaid minimum after the scope and services agreement are accepted.</span></p>
+              </div>
+              <p>Time is deducted as work is completed. The initial credit is not a fixed price for completing an entire project.</p>
+              <details class="rate-details">
+                <summary>Top-ups &amp; unused credit</summary>
+                <div class="rate-details-body">
+                  <h4>Continuing the work</h4>
+                  <p>Work pauses when the available credit is used. Further work requires approval and prepayment of a minimum 2-hour top-up at the agreed rate. Scope changes and additional costs are confirmed before they are incurred.</p>
+                  <h4>When the project finishes</h4>
+                  <p>For hourly work, the credit policy is confirmed in the project agreement before payment: when a project finishes, unused credit of 2 hours or less stays on file for future work; more than 2 unused hours can be refunded on request or retained as credit. This policy is subject to any refund or cancellation rights required by applicable law.</p>
+                </div>
+              </details>
+            </div>
+            <a class="btn btn-secondary rate-cta" href="#contact">Discuss a project</a>
+          </article>
         </div>
 
-        <div class="section-body">
-          <p class="lead-text pricing-lead"><strong>Monthly support: CA$750/month for 10 hours.</strong>
-            Reserved capacity, an agreed task list, tracked time and a monthly progress summary.
-            <a href="#monthly-support">See the monthly plan</a>. Billing dates, cancellation, unused-hour treatment
-            and scheduling are confirmed in your subscription agreement before enrollment.</p>
-
-          <h3>Hourly project work</h3>
-          <p>
-            Project support for new clients starts at CA$70/hr. After the scope and services agreement are accepted,
-            hourly work begins with a 2-hour prepaid minimum of CA$140. Time is deducted as work is completed;
-            the initial credit is not a fixed price for completing an entire project.
-          </p>
-
-          <p>
-            Work pauses when the available credit is used. Further work requires approval and prepayment of
-            a minimum 2-hour top-up at the agreed rate. Scope changes and additional costs are confirmed before
-            they are incurred.
-          </p>
-
-          <p>
-            For hourly work, the credit policy is confirmed in the project agreement before payment: when a project
-            finishes, unused credit of 2 hours or less stays on file for future work; more than 2 unused hours
-            can be refunded on request or retained as credit. This policy is subject to any refund or cancellation
-            rights required by applicable law.
-          </p>
-
-          <p>
-            Pricing covers design and support labor only. Components, PCB manufacturing, 3D print material,
-            print time, outside fabrication, shipping, specialty modules, and replacement parts are separate unless
-            clearly included in a written quote.
-          </p>
-          <p>
-            All prices are in Canadian dollars (CAD). Existing clients retain their agreed project rates;
-            use the payment link supplied for your approved scope or invoice.
-            <a href="#contact">Contact Michael</a> if you need the appropriate link resent.
-          </p>
-        </div>
+        <aside class="billing-notes" aria-label="Costs and existing-client billing">
+          <div>
+            <h3>Materials &amp; outside costs</h3>
+            <p>Pricing covers design and support labor only. Components, PCB manufacturing, 3D print material, print time, outside fabrication, shipping, specialty modules, and replacement parts are separate unless clearly included in a written quote.</p>
+          </div>
+          <div>
+            <h3>Existing clients</h3>
+            <p>All prices are in Canadian dollars (CAD). Existing clients retain their agreed project rates; use the payment link supplied for your approved scope or invoice. <a href="#contact">Contact Michael</a> if you need the appropriate link resent.</p>
+          </div>
+        </aside>
       </div>
     </section>
 
