@@ -2288,6 +2288,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .plan-inclusions li::marker { color: #2563eb; }
 .monthly-cta { width: 100%; }
 .plan-note { margin: 16px 0; font-size: .88rem; color: #475569; }
+.approved-enrollment { margin: 0 0 20px; padding: 14px; border-radius: 12px; background: #f1f5fb; font-size: .85rem; }
+.approved-enrollment a { color: #1d4ed8; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.approved-enrollment p { margin: 8px 0 0; color: #475569; }
 .plan-details { border-top: 1px solid #dbe3ef; padding-top: 18px; font-size: .87rem; color: #475569; }
 .plan-details p:last-child { margin-bottom: 0; }
 .project-proof-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; margin-top: 24px; }
