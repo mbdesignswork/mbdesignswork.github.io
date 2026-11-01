@@ -1053,6 +1053,242 @@ h4 {
   background: var(--surface-2);
 }
 
+/* Separate the two purchasing options from their billing policies. */
+.pricing-heading {
+  max-width: 800px;
+  margin-bottom: 32px;
+}
+
+.pricing-heading h2 {
+  text-wrap: balance;
+}
+
+.pricing-heading > p:last-child {
+  margin-bottom: 0;
+  max-width: 66ch;
+  color: #475569;
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.pricing-heading .eyebrow {
+  color: #1d4ed8;
+}
+
+.pricing-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.rate-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(24px, 3vw, 34px);
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.045);
+}
+
+.rate-card-monthly {
+  border-color: #93b9f9;
+}
+
+.rate-card-header {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.rate-card .rate-label {
+  margin: 0 0 12px;
+  color: #1d4ed8;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.rate-card h3 {
+  margin: 0 0 18px;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+
+.rate-card .rate-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: clamp(2.25rem, 3.6vw, 3.25rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+.rate-price span {
+  color: #475569;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.rate-card .rate-allocation {
+  margin: 0;
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.rate-card-content {
+  padding-top: 24px;
+}
+
+.rate-card h4 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.rate-card-content p,
+.rate-inclusions {
+  color: #475569;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.rate-inclusions {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 24px;
+  padding-left: 20px;
+}
+
+.rate-inclusions li::marker {
+  color: #2563eb;
+}
+
+.rate-terms,
+.rate-credit {
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: #f1f5fb;
+}
+
+.rate-terms p,
+.rate-credit p {
+  margin: 0;
+}
+
+.rate-credit {
+  margin-bottom: 18px;
+}
+
+.rate-credit strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f172a;
+  font-size: 1.15rem;
+}
+
+.rate-credit span {
+  display: block;
+  font-size: 0.88rem;
+}
+
+.rate-details {
+  margin-top: 20px;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.rate-details summary {
+  min-height: 44px;
+  padding: 16px 0 2px;
+  color: #1d4ed8;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.rate-details-body {
+  padding-top: 20px;
+}
+
+.rate-details-body p {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.rate-details-body p:last-child {
+  margin-bottom: 0;
+}
+
+.rate-card .rate-cta {
+  width: fit-content;
+  margin-top: 28px;
+}
+
+.billing-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid #cbd5e1;
+}
+
+.billing-notes h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+
+.billing-notes p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.billing-notes a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .pricing-options,
+  .billing-notes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .rate-card .rate-cta {
+    width: 100%;
+  }
+
+  .billing-notes > div + div {
+    padding-top: 20px;
+    border-top: 1px solid #cbd5e1;
+  }
+}
+
+
 /* FAQ */
 
 .faq-section {
