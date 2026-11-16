@@ -4,14 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>MB Designs Work | Electronics Design & Monthly Support</title>
+  <title>PCB Design &amp; Electronics Prototyping | MB Designs Work</title>
 
   <meta
     name="description"
-    content="Electronics, PCB design, embedded firmware, CAD and prototype development. Project work and monthly design support from CA$750/month. Based in Canada, serving US and worldwide clients."
+    content="PCB design, electronics prototyping, embedded firmware and CAD for clients worldwide. Work directly with Michael Bradshaw on projects or monthly design support."
   />
 
   <link rel="canonical" href="https://mbdesignswork.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MB Designs Work" />
+  <meta property="og:title" content="PCB Design &amp; Electronics Prototyping | MB Designs Work" />
+  <meta property="og:description" content="PCB design, electronics prototyping, embedded firmware and CAD for clients worldwide. Work directly with Michael Bradshaw on projects or monthly design support." />
+  <meta property="og:url" content="https://mbdesignswork.com/" />
+  <meta property="og:image" content="https://mbdesignswork.com/assets/pcb-render.png" />
+  <meta property="og:image:alt" content="Altium 3D render of a Bluetooth preamp PCB prototype" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mbdesignswork.com/#business",
+      "name": "MB Designs Work",
+      "url": "https://mbdesignswork.com/",
+      "logo": "https://mbdesignswork.com/assets/logo.png",
+      "email": "michael@mbdesignswork.com",
+      "description": "Electronics and PCB design, embedded firmware, CAD and prototype development for clients worldwide.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Ontario",
+        "addressCountry": "CA"
+      },
+      "areaServed": "Worldwide",
+      "founder": {
+        "@id": "https://mbdesignswork.com/#founder"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Electronics and prototype services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "PCB design",
+              "url": "https://mbdesignswork.com/pcb-design/",
+              "provider": {
+                "@id": "https://mbdesignswork.com/#business"
+              },
+              "areaServed": "Worldwide"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electronics prototyping",
+              "url": "https://mbdesignswork.com/electronics-prototyping/",
+              "provider": {
+                "@id": "https://mbdesignswork.com/#business"
+              },
+              "areaServed": "Worldwide"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Legacy PCB recreation",
+              "url": "https://mbdesignswork.com/legacy-pcb-recreation/",
+              "provider": {
+                "@id": "https://mbdesignswork.com/#business"
+              },
+              "areaServed": "Worldwide"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Embedded firmware",
+              "url": "https://mbdesignswork.com/embedded-firmware/",
+              "provider": {
+                "@id": "https://mbdesignswork.com/#business"
+              },
+              "areaServed": "Worldwide"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "CAD, enclosures & fixtures",
+              "url": "https://mbdesignswork.com/cad-enclosures-fixtures/",
+              "provider": {
+                "@id": "https://mbdesignswork.com/#business"
+              },
+              "areaServed": "Worldwide"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mbdesignswork.com/#founder",
+      "name": "Michael Bradshaw",
+      "url": "https://mbdesignswork.com/#about",
+      "jobTitle": "Founder",
+      "worksFor": {
+        "@id": "https://mbdesignswork.com/#business"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mbdesignswork.com/#website",
+      "url": "https://mbdesignswork.com/",
+      "name": "MB Designs Work",
+      "publisher": {
+        "@id": "https://mbdesignswork.com/#business"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+  </script>
 
   <!-- Favicon / browser tab icon -->
   <link rel="icon" type="image/png" href="assets/logo.png?v=4" />
@@ -19,6 +139,7 @@
   <link rel="apple-touch-icon" href="assets/logo.png?v=4" />
 
   <link rel="stylesheet" href="style.css?v=20" />
+  <link rel="stylesheet" href="service-pages.css?v=1" />
 
   <style>
     .hero-intro-call {
@@ -108,7 +229,7 @@
             <a href="#contact" class="btn btn-secondary">Discuss a project</a>
           </div>
 
-          <p class="hero-location">Based in Canada. Serving US, Canadian and worldwide clients.</p>
+          <p class="hero-location">Serving clients worldwide. Based in Ontario, Canada.</p>
 
           <p class="hero-intro-call">
             <strong>Not ready for a quote?</strong>
@@ -208,48 +329,56 @@
             <span class="catalog-tag">Electronics</span>
             <h3>Custom electronics for prototypes</h3>
             <p>Circuits and boards for product ideas, prototypes, repairs, sensors, audio, displays, buttons, lighting, motors, wiring, and custom hardware.</p>
+            <a class="service-detail-link" href="/electronics-prototyping/">Explore electronics prototyping <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="catalog-card">
             <span class="catalog-tag">PCB</span>
             <h3>Schematic and PCB design</h3>
             <p>Altium schematic capture, PCB layout, component selection, connector planning, technical feedback, and prototype fabrication files.</p>
+            <a class="service-detail-link" href="/pcb-design/">Explore PCB design <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="catalog-card">
             <span class="catalog-tag">Prototype</span>
             <h3>Breadboarding and bench debug</h3>
             <p>Bring-up checks, power-rail measurements, signal tracing, noise troubleshooting, continuity checks, and practical debug plans.</p>
+            <a class="service-detail-link" href="/electronics-prototyping/">Explore prototype debugging <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="catalog-card">
             <span class="catalog-tag">Embedded</span>
             <h3>Embedded firmware and integration</h3>
             <p>Embedded C, peripheral configuration, sensor interfaces, motor-control logic, serial protocols, Bluetooth module integration and hardware-firmware testing.</p>
+            <a class="service-detail-link" href="/embedded-firmware/">Explore embedded firmware <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="catalog-card">
             <span class="catalog-tag">CAD / 3D Print</span>
             <h3>Enclosures, fixtures and prototype parts</h3>
             <p>Autodesk CAD, 3D-printable enclosures, brackets, clips, PCB holders, programming fixtures, test jigs, STL/STEP files, and small printed parts.</p>
+            <a class="service-detail-link" href="/cad-enclosures-fixtures/">Explore CAD and fixtures <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="catalog-card">
             <span class="catalog-tag">Legacy</span>
             <h3>Reverse engineering and board recreation</h3>
             <p>Legacy PCB recreation, board tracing, connector/wire documentation, redesign support, and practical replacement-board planning.</p>
+            <a class="service-detail-link" href="/legacy-pcb-recreation/">Explore board recreation <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="catalog-card">
             <span class="catalog-tag">Bench tools</span>
             <h3>Fixtures and test adapters</h3>
             <p>Programming fixtures, wiring aids, test adapters, sensor interfaces, and prototype boards for defined bench and development tasks.</p>
+            <a class="service-detail-link" href="/cad-enclosures-fixtures/">Explore fixture design <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="catalog-card">
             <span class="catalog-tag">Files</span>
             <h3>Manufacturing and design files</h3>
             <p>Gerbers, drill and assembly outputs, BOM preparation, component availability checks, CAD files, STEP/STL exports and documentation for your next build.</p>
+            <a class="service-detail-link" href="/pcb-design/">Explore PCB deliverables <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
@@ -1106,7 +1235,7 @@
             </p>
 
             <p>
-              Based in Canada, I work with US, Canadian and international clients. You work directly with
+              Based in Ontario, Canada, I work with clients worldwide. You work directly with
               the person designing and testing your hardware, with an agreed scope and schedule for each engagement.
             </p>
           </div>
@@ -1361,6 +1490,13 @@
     </main>
 
   <footer class="site-footer">
+    <nav class="site-width service-page-links" aria-label="Explore services">
+      <a href="/pcb-design/">PCB design</a>
+      <a href="/electronics-prototyping/">Electronics prototyping</a>
+      <a href="/legacy-pcb-recreation/">Legacy PCB recreation</a>
+      <a href="/embedded-firmware/">Embedded firmware</a>
+      <a href="/cad-enclosures-fixtures/">CAD, enclosures &amp; fixtures</a>
+    </nav>
     <div class="site-width footer-content">
       <p>© 2026 MB Designs Work. All rights reserved.</p>
       <p>Electronics · PCB · Embedded firmware · CAD · Monthly design support<br />
