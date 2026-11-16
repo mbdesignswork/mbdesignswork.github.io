@@ -1,0 +1,69 @@
+/* Homepage additions only target new links; existing layout rules stay in style.css. */
+.service-detail-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding-block: 4px;
+  color: #1d4ed8;
+  font-size: .88rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.service-detail-link:hover { color: #153da5; }
+.service-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid rgba(255,255,255,.14);
+  font-size: .88rem;
+}
+.service-page-links a { padding-block: 5px; color: #bfdbfe; }
+.service-page-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Dedicated service pages share the site's existing branding and header. */
+.detail-page .detail-hero { padding-block: 36px 56px; }
+.detail-page .detail-hero h1 { max-width: 900px; font-size: clamp(2.3rem, 4.8vw, 4rem); line-height: 1.04; }
+.detail-page .detail-hero .hero-text { max-width: 800px; }
+.detail-page .detail-hero .hero-location { margin-bottom: 0; }
+.detail-page .detail-breadcrumb { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; color: #cbd5e1; font-size: .84rem; }
+.detail-page .detail-breadcrumb a { text-decoration: underline; text-underline-offset: 4px; }
+.detail-page .detail-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(32px, 5vw, 70px); align-items: start; padding-block: 60px; }
+.detail-page .detail-content { min-width: 0; }
+.detail-page .detail-section { margin-bottom: 38px; }
+.detail-page .detail-section:last-child { margin-bottom: 0; }
+.detail-page .detail-section h2 { font-size: clamp(1.65rem, 2.5vw, 2rem); line-height: 1.15; letter-spacing: -.035em; }
+.detail-page .detail-section p, .detail-page .detail-section li { color: #475569; line-height: 1.75; }
+.detail-page .detail-section ul { padding-left: 22px; }
+.detail-page .detail-section li { padding-left: 4px; margin-bottom: 12px; }
+.detail-page .detail-section strong { color: #1e293b; }
+.detail-page .detail-content a, .detail-page .detail-sidebar p a, .detail-page .detail-scope a, .detail-page .detail-intro-link { color: #1d4ed8; text-decoration: underline; text-underline-offset: 3px; }
+.detail-page .detail-sidebar { padding: 26px; border-radius: 24px; border: 1px solid #cbd9ee; background: white; box-shadow: var(--shadow-soft); }
+.detail-page .detail-sidebar .eyebrow { color: #1d4ed8; font-size: .67rem; }
+.detail-page .detail-sidebar h2 { font-size: 1.8rem; }
+.detail-page .detail-sidebar p { color: #475569; }
+.detail-page .detail-sidebar .btn { width: 100%; font-size: .9rem; padding-inline: 14px; }
+.detail-page .detail-rates { margin-block: 24px; border-block: 1px solid var(--line); padding-block: 20px; }
+.detail-page .detail-rates dt { font-size: .8rem; color: #64748b; }
+.detail-page .detail-rates dd { margin: 0 0 14px; font-weight: 700; }
+.detail-page .detail-rates dd:last-child { margin-bottom: 0; }
+.detail-page .detail-small { font-size: .83rem; line-height: 1.65; }
+.detail-page .detail-intro-link { display: inline-block; font-size: .86rem; font-weight: 700; }
+.detail-page .detail-example { padding: 26px; background: #eaf0f8; border-radius: 20px; }
+.detail-page .detail-related { background: #eaf0f8; }
+.detail-page .detail-related h2 { font-size: 2rem; }
+.detail-page .detail-related-links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-block: 24px; }
+.detail-page .detail-related-links a { display: flex; justify-content: space-between; gap: 16px; padding: 18px 20px; background: white; color: #1e40af; border: 1px solid var(--line); border-radius: 14px; font-weight: 700; }
+.detail-page .detail-related-links a:hover { border-color: #2563eb; }
+.detail-page .detail-scope { max-width: 850px; color: #475569; font-size: .88rem; margin-bottom: 0; }
+@media (max-width: 900px) {
+  .detail-page .detail-layout { grid-template-columns: 1fr; }
+  .detail-page .detail-sidebar { max-width: 720px; }
+}
+@media (max-width: 680px) {
+  .detail-page .detail-hero { padding-block: 28px 40px; }
+  .detail-page .detail-layout { padding-block: 38px; }
+  .detail-page .detail-related-links { grid-template-columns: 1fr; }
+  .service-page-links { gap: 10px 20px; }
+}
