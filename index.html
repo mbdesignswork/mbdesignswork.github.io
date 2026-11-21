@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="AYN9bE145DOmwAQfxKeEw2qBVsEZDD_ZWYsI-ZysaRI" />
 
-  <title>PCB Design &amp; Electronics Prototyping | MB Designs Work</title>
+  <title>PCB Design &amp; Electronics Prototyping Services | MB Designs Work</title>
 
   <meta
     name="description"
-    content="PCB design, electronics prototyping, embedded firmware and CAD for clients worldwide. Work directly with Michael Bradshaw on projects or monthly design support."
+    content="Work with Michael Bradshaw in Ontario, Canada for Altium PCB design, electronics prototyping, embedded firmware and CAD. Remote projects welcome worldwide."
   />
 
   <link rel="canonical" href="https://mbdesignswork.com/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="MB Designs Work" />
-  <meta property="og:title" content="PCB Design &amp; Electronics Prototyping | MB Designs Work" />
-  <meta property="og:description" content="PCB design, electronics prototyping, embedded firmware and CAD for clients worldwide. Work directly with Michael Bradshaw on projects or monthly design support." />
+  <meta property="og:title" content="PCB Design &amp; Electronics Prototyping Services | MB Designs Work" />
+  <meta property="og:description" content="Work with Michael Bradshaw in Ontario, Canada for Altium PCB design, electronics prototyping, embedded firmware and CAD. Remote projects welcome worldwide." />
   <meta property="og:url" content="https://mbdesignswork.com/" />
   <meta property="og:image" content="https://mbdesignswork.com/assets/pcb-render.png" />
   <meta property="og:image:alt" content="Altium 3D render of a Bluetooth preamp PCB prototype" />
@@ -39,6 +40,7 @@
         "addressCountry": "CA"
       },
       "areaServed": "Worldwide",
+      "makesOffer": { "@id": "https://mbdesignswork.com/#new-client-hourly-credit" },
       "founder": {
         "@id": "https://mbdesignswork.com/#founder"
       },
@@ -50,6 +52,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "@id": "https://mbdesignswork.com/pcb-design/#service",
               "name": "PCB design",
               "url": "https://mbdesignswork.com/pcb-design/",
               "provider": {
@@ -62,6 +65,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "@id": "https://mbdesignswork.com/electronics-prototyping/#service",
               "name": "Electronics prototyping",
               "url": "https://mbdesignswork.com/electronics-prototyping/",
               "provider": {
@@ -74,6 +78,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "@id": "https://mbdesignswork.com/legacy-pcb-recreation/#service",
               "name": "Legacy PCB recreation",
               "url": "https://mbdesignswork.com/legacy-pcb-recreation/",
               "provider": {
@@ -86,6 +91,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "@id": "https://mbdesignswork.com/embedded-firmware/#service",
               "name": "Embedded firmware",
               "url": "https://mbdesignswork.com/embedded-firmware/",
               "provider": {
@@ -98,6 +104,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "@id": "https://mbdesignswork.com/cad-enclosures-fixtures/#service",
               "name": "CAD, enclosures & fixtures",
               "url": "https://mbdesignswork.com/cad-enclosures-fixtures/",
               "provider": {
@@ -107,6 +114,22 @@
             }
           }
         ]
+      }
+    },
+    {
+      "@type": "Offer",
+      "@id": "https://mbdesignswork.com/#new-client-hourly-credit",
+      "name": "Prepaid engineering hours for new clients",
+      "description": "New clients pay CAD $75 per hour after scope and agreement approval. The two-hour prepaid minimum is CAD $150. Existing clients keep their individually agreed rates.",
+      "url": "https://mbdesignswork.com/#pricing",
+      "seller": { "@id": "https://mbdesignswork.com/#business" },
+      "itemOffered": { "@type": "Service", "name": "Hourly engineering project work" },
+      "eligibleQuantity": { "@type": "QuantitativeValue", "minValue": 2, "unitCode": "HUR" },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": 75,
+        "priceCurrency": "CAD",
+        "referenceQuantity": { "@type": "QuantitativeValue", "value": 1, "unitCode": "HUR" }
       }
     },
     {
@@ -134,12 +157,12 @@
   </script>
 
   <!-- Favicon / browser tab icon -->
-  <link rel="icon" type="image/png" href="assets/logo.png?v=4" />
-  <link rel="shortcut icon" href="assets/logo.png?v=4" />
-  <link rel="apple-touch-icon" href="assets/logo.png?v=4" />
+  <link rel="icon" type="image/png" href="assets/logo-192.png" />
+  <link rel="shortcut icon" href="assets/logo-192.png" />
+  <link rel="apple-touch-icon" href="assets/logo-192.png" />
 
   <link rel="stylesheet" href="style.css?v=20" />
-  <link rel="stylesheet" href="service-pages.css?v=1" />
+  <link rel="stylesheet" href="service-pages.css?v=2" />
 
   <style>
     .hero-intro-call {
@@ -194,7 +217,7 @@
   <header class="site-header">
     <div class="site-width nav">
       <a href="#" class="brand">
-        <img src="assets/logo.png" alt="MB Designs Work logo" class="logo" />
+        <img src="assets/logo-192.png" width="192" height="192" alt="MB Designs Work logo" class="logo" />
         <span>MB Designs Work</span>
       </a>
 
@@ -211,17 +234,17 @@
   </header>
 
   <main id="main-content">
-    <section class="hero screen-section">
+    <section class="hero screen-section" id="business">
       <div class="site-width hero-grid">
         <div class="hero-content">
           <p class="eyebrow">Project work &amp; monthly design support</p>
 
-          <h1>From circuit idea to working hardware.</h1>
+          <h1>PCB design and electronics prototyping.</h1>
 
           <p class="hero-text">
-            Electronics design, PCB layout, embedded firmware, CAD and hands-on prototype development.
-            Work directly with Michael Bradshaw to develop a complete board, solve a hardware problem,
-            or keep your product moving with ongoing monthly support.
+            Work directly with Michael Bradshaw on Altium schematics and PCB layout, embedded firmware
+            and prototype enclosures. Bring a new board design, a prototype that needs debugging,
+            or an ongoing product that needs monthly design support.
           </p>
 
           <div class="hero-buttons">
@@ -404,7 +427,7 @@
           </button>
 
           <div class="model-stage">
-            <article class="model-slide is-active" data-model-slide data-model-title="PCB model">
+            <article class="model-slide is-active" id="pcb-model" data-model-slide data-model-title="PCB model">
               <div class="model-viewer-shell">
                 <div class="model-view-toolbar" aria-label="PCB model view controls">
                   <button type="button" class="model-view-button is-active" data-view="iso">ISO</button>
@@ -454,6 +477,7 @@
                 <p>
                   Interactive board model showing component placement, PCB layout and power/audio routing.
                 </p>
+                <a href="/pcb-design/#bluetooth-preamp" class="service-detail-link">See the Bluetooth preamp PCB layout</a>
                 <p class="model-controls-help">
                   Left-drag to rotate. Scroll to zoom. Right-click drag, Shift-drag, or two-finger drag to pan.
                   Use the view buttons for quick CAD-style angles.
@@ -461,7 +485,7 @@
               </div>
             </article>
 
-            <article class="model-slide" data-model-slide data-model-title="Autodesk fixture">
+            <article class="model-slide" id="cad-fixture-model" data-model-slide data-model-title="Autodesk fixture">
               <div class="model-viewer-shell">
                 <div class="model-view-toolbar" aria-label="Autodesk fixture view controls">
                   <button type="button" class="model-view-button is-active" data-view="iso">ISO</button>
@@ -518,7 +542,7 @@
               </div>
             </article>
 
-            <article class="model-slide" data-model-slide data-model-title="Enclosure concept">
+            <article class="model-slide" id="enclosure-model" data-model-slide data-model-title="Enclosure concept">
               <div class="model-viewer-shell">
                 <div class="model-view-toolbar" aria-label="Enclosure concept view controls">
                   <button type="button" class="model-view-button is-active" data-view="iso">ISO</button>
@@ -673,19 +697,19 @@
         </div>
 
         <div class="project-proof-grid">
-          <article class="project-proof-card">
+          <article class="project-proof-card" id="audio-electronics-project">
             <span class="project-status soft">Independent project · Built &amp; tested</span>
             <h3>Audio electronics &amp; discrete Class-D</h3>
             <p>Built and tested a discrete Class-D amplifier, plus Bluetooth audio hardware with active filtering, gain stages and amplifier-module integration. Work included grounding, noise diagnosis and bench measurements.</p>
             <p class="proof-tools">Analog circuits · Switching stages · Audio integration</p>
           </article>
-          <article class="project-proof-card">
+          <article class="project-proof-card" id="embedded-rover-project">
             <span class="project-status soft">Independent project · Functional prototype</span>
             <h3>Embedded rover control</h3>
             <p>Developed embedded C firmware for an MSP432 rover with stepper control, timed execution and a communication timeout, paired with a Python control interface over UART.</p>
             <p class="proof-tools">Embedded C · UART · Motor control · Python</p>
           </article>
-          <article class="project-proof-card">
+          <article class="project-proof-card" id="bench-test-project">
             <span class="project-status soft">Independent project · Built &amp; used</span>
             <h3>IR controls &amp; automated bench tests</h3>
             <p>Built a four-command discrete infrared control system and Python test automation using the WaveForms SDK and Analog Discovery 2 for repeatable signal generation and acquisition.</p>
@@ -1173,7 +1197,7 @@
             <a class="btn btn-primary rate-cta" href="#monthly-support">See the monthly plan</a>
           </article>
 
-          <article class="rate-card" aria-labelledby="hourly-rate-heading">
+          <article class="rate-card" id="new-client-hourly-credit" aria-labelledby="hourly-rate-heading">
             <div class="rate-card-header">
               <p class="rate-label">Individual projects</p>
               <h3 id="hourly-rate-heading">Hourly project work</h3>
@@ -1218,7 +1242,7 @@
       <div class="site-width">
         <div class="about-card">
           <div class="about-copy">
-            <p class="eyebrow">About Michael</p>
+            <p class="eyebrow" id="founder">About Michael Bradshaw</p>
             <h2>Design, build and test experience across electronics and manufacturing.</h2>
 
             <p class="lead-text">
@@ -1696,7 +1720,16 @@
 
     document.querySelectorAll("model-viewer.standard-model-viewer").forEach(attachModelLoadingOverlay);
 
+    function showLinkedModel() {
+      const index = modelSlides.findIndex(slide => "#" + slide.id === window.location.hash);
+      if (index < 0) return;
+      showModelSlide(index);
+      modelSlides[index].scrollIntoView({ block: "start" });
+    }
+
     showModelSlide(0);
+    showLinkedModel();
+    window.addEventListener("hashchange", showLinkedModel);
 
     const modelLightbox = document.querySelector("[data-model-lightbox]");
     const expandedModelViewer = document.getElementById("expanded-model-viewer");

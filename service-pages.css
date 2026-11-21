@@ -51,6 +51,9 @@
 .detail-page .detail-small { font-size: .83rem; line-height: 1.65; }
 .detail-page .detail-intro-link { display: inline-block; font-size: .86rem; font-weight: 700; }
 .detail-page .detail-example { padding: 26px; background: #eaf0f8; border-radius: 20px; }
+.board-example { margin: 1.25rem 0; }
+.board-example img { display: block; width: min(100%, 28rem); height: auto; }
+.board-example figcaption { margin-top: .5rem; color: #475569; font-size: .9rem; }
 .detail-page .detail-related { background: #eaf0f8; }
 .detail-page .detail-related h2 { font-size: 2rem; }
 .detail-page .detail-related-links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-block: 24px; }
