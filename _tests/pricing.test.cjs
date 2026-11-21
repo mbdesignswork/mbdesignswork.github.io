@@ -29,6 +29,15 @@ test('fixed services and monthly design support retain their separate prices', (
   assert.match(textOf(home), /CAD \$750 \/ month 10 hours of reserved capacity each month/);
 });
 
+test('monthly inquiry emails quote the same CAD amount as the plan', () => {
+  const inquiryLinks = Array.from(home.matchAll(/href="(mailto:[^"]+)">Discuss monthly support/g));
+  assert.equal(inquiryLinks.length, 2);
+  for (const [, href] of inquiryLinks) {
+    const body = new URL(href.replaceAll('&amp;', '&')).searchParams.get('body');
+    assert.ok(body.includes('CAD $750/month for 10 hours'));
+  }
+});
+
 test('public hourly inquiries go through agreement and only approved monthly enrollment has a Stripe link', () => {
   assert.match(textOf(home), /individually agreed hourly rate continues to apply unless we explicitly agree/);
   assert.match(textOf(home), /payment link supplied for your approved scope or invoice/);
