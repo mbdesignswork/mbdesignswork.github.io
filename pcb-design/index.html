@@ -14,10 +14,10 @@
   <meta property="og:image" content="https://mbdesignswork.com/assets/pcb-render.png" />
   <meta property="og:image:alt" content="Altium 3D render of a Bluetooth preamp PCB prototype" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/png" href="/assets/logo.png?v=4" />
-  <link rel="apple-touch-icon" href="/assets/logo.png?v=4" />
+  <link rel="icon" type="image/png" href="/assets/logo-192.png" />
+  <link rel="apple-touch-icon" href="/assets/logo-192.png" />
   <link rel="stylesheet" href="/style.css?v=20" />
-  <link rel="stylesheet" href="/service-pages.css?v=1" />
+  <link rel="stylesheet" href="/service-pages.css?v=2" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,7 +62,7 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="site-width nav">
-      <a href="/" class="brand"><img src="/assets/logo.png" alt="MB Designs Work logo" class="logo" /><span>MB Designs Work</span></a>
+      <a href="/" class="brand"><img src="/assets/logo-192.png" width="192" height="192" alt="MB Designs Work logo" class="logo" /><span>MB Designs Work</span></a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="/#monthly-support">Monthly support</a><a href="/#services">Services</a><a href="/#projects">Projects</a><a href="/#models">3D models</a><a href="/#about">About</a>
       </nav>
@@ -70,7 +70,7 @@
     </div>
   </header>
   <main id="main-content">
-    <section class="hero detail-hero">
+    <section class="hero detail-hero" id="service">
       <div class="site-width">
         <nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">PCB design</span></nav>
         <p class="eyebrow">MB Designs Work · Worldwide services</p>
@@ -86,8 +86,15 @@
           <section class="detail-section"><h2>From schematic to fabrication files</h2><ul><li><strong>Circuit planning:</strong> block diagrams, power rails, interfaces, connector planning and component selection.</li><li><strong>Altium schematic capture:</strong> organized schematics, part information and documented design decisions.</li><li><strong>PCB layout:</strong> footprints, component placement, board outlines, mounting holes, stack-up planning and routing.</li><li><strong>Design checks:</strong> electrical and layout checks, footprint verification and review against the agreed manufacturing requirements.</li><li><strong>Build preparation:</strong> BOM preparation, Gerbers, drill files and agreed assembly documentation.</li></ul><p>Source files and manufacturing outputs are defined in the project scope. Fabrication and assembly are separate costs; preparing a board for a prototype build does not establish that the finished product has passed every required test.</p></section>
           <section class="detail-section"><h2>Existing boards and next revisions</h2><p>If you already have a design, the work can focus on a specific problem: a connector change, a component replacement, layout cleanup or a revision after bring-up. Send the available source files and explain what should change so the existing work can be assessed first.</p><p>A schematic or PCB review can also be scoped separately. Findings identify suggested corrections, open questions and checks needed before the next build.</p></section>
           <section class="detail-section"><h2>What to send</h2><p>Start with the intended use, required inputs and outputs, supply voltage and expected loads, approximate board size, connector requirements and target timing. Mention the existing CAD tool, available files and whether you need design-only work or help with prototype bring-up.</p><p>For the next stage, see <a href="/electronics-prototyping/">electronics prototyping and debugging</a>. If the starting point is an undocumented physical board, see <a href="/legacy-pcb-recreation/">legacy PCB recreation</a>.</p></section>
-        <section class="detail-section detail-example">
-          <h2>Explore the work</h2><p>The homepage includes a Bluetooth preamp PCB model and examples of independent audio development.</p><a href="/#models">View the PCB model <span aria-hidden="true">→</span></a>
+        <section class="detail-section detail-example" id="bluetooth-preamp" aria-labelledby="preamp-heading">
+          <h2 id="preamp-heading">Bluetooth audio preamp PCB layout</h2>
+          <p>On this independent audio prototype, the Bluetooth module sits beside the J1 pin header. The Altium render shows the traces connecting them, the audio connectors on the opposite edge and the power components along the stepped right side of the board.</p>
+          <figure class="board-example">
+            <img src="/assets/pcb-render.png?v=1" width="2100" height="2190" loading="lazy" decoding="async" alt="Top view of the Bluetooth preamp PCB with its module beside J1 and audio connectors along the upper edge" />
+            <figcaption>Altium component-side view of the MB Designs Work Bluetooth preamp prototype.</figcaption>
+          </figure>
+          <p>When reviewing a board for an enclosure, the side view is useful for checking connector access and the height of the larger components. Rotate this board to inspect those details.</p>
+          <a href="/#pcb-model">Inspect the preamp PCB in 3D <span aria-hidden="true">→</span></a>
         </section>
       </div>
       <aside class="detail-sidebar" aria-label="Project planning">

@@ -22,6 +22,18 @@ test('the hourly card and all seven starter services quote the new-client minimu
   }
 });
 
+test('search engines receive the approved new-client hourly unit and prepaid minimum in CAD', () => {
+  const graph = JSON.parse(home.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+  const business = graph.find((node) => node['@type'] === 'Organization');
+  const offer = graph.find((node) => node['@id'] === business.makesOffer['@id']);
+  assert.match(offer.name, /new clients/i);
+  assert.equal(offer.priceSpecification.priceCurrency, 'CAD');
+  assert.equal(offer.priceSpecification.price, 75);
+  assert.deepEqual(offer.priceSpecification.referenceQuantity, { '@type': 'QuantitativeValue', value: 1, unitCode: 'HUR' });
+  assert.equal(offer.eligibleQuantity.minValue, 2);
+  assert.match(offer.description, /Existing clients keep their individually agreed rates/);
+});
+
 test('fixed services and monthly design support retain their separate prices', () => {
   const fixedServices = services.filter((card) => !starters.includes(card));
   assert.equal(fixedServices.length, 2);
