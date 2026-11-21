@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bluetooth Preamp PCB Layout and Enclosure Clearance | MB Designs Work</title>
+  <meta name="description" content="See how Michael Bradshaw checked connector placement and enclosure clearance on a Bluetooth preamp PCB, with the original Altium board model and a measured side view." />
+  <link rel="canonical" href="https://mbdesignswork.com/projects/bluetooth-preamp-pcb/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="MB Designs Work" />
+  <meta property="og:title" content="Bluetooth preamp PCB layout and enclosure clearance" />
+  <meta property="og:description" content="Six film capacitors set the lid clearance on this audio board. See their placement, the measured side profile and the original 3D PCB model." />
+  <meta property="og:url" content="https://mbdesignswork.com/projects/bluetooth-preamp-pcb/" />
+  <meta property="og:image" content="https://mbdesignswork.com/assets/pcb-render.png" />
+  <meta property="og:image:alt" content="Component-side view of the Bluetooth preamp PCB with its stepped outline and edge connectors" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="/assets/logo-192.png" />
+  <link rel="stylesheet" href="/style.css?v=20" />
+  <link rel="stylesheet" href="/service-pages.css?v=3" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Bluetooth preamp PCB layout and enclosure clearance",
+        "url": "https://mbdesignswork.com/projects/bluetooth-preamp-pcb/",
+        "mainEntityOfPage": "https://mbdesignswork.com/projects/bluetooth-preamp-pcb/",
+        "image": ["https://mbdesignswork.com/assets/pcb-render.png", "https://mbdesignswork.com/assets/bluetooth-preamp-side-elevation.png"],
+        "author": { "@type": "Organization", "@id": "https://mbdesignswork.com/#business", "name": "MB Designs Work", "url": "https://mbdesignswork.com/" },
+        "publisher": { "@id": "https://mbdesignswork.com/#business" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mbdesignswork.com/" },
+          { "@type": "ListItem", "position": 2, "name": "PCB design", "item": "https://mbdesignswork.com/pcb-design/" },
+          { "@type": "ListItem", "position": 3, "name": "Bluetooth preamp PCB", "item": "https://mbdesignswork.com/projects/bluetooth-preamp-pcb/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="detail-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="site-width nav">
+      <a href="/" class="brand"><img src="/assets/logo-192.png" width="192" height="192" class="logo" alt="MB Designs Work logo" /><span>MB Designs Work</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/#monthly-support">Monthly support</a><a href="/#services">Services</a><a href="/#projects">Projects</a><a href="/#models">3D models</a><a href="/#about">About</a>
+      </nav>
+      <a href="/#contact" class="nav-cta">Request quote</a>
+    </div>
+  </header>
+  <main id="main-content">
+    <header class="hero detail-hero">
+      <div class="site-width">
+        <nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/pcb-design/">PCB design</a><span aria-hidden="true">/</span><span aria-current="page">Bluetooth preamp</span></nav>
+        <div class="case-intro">
+          <div>
+            <h1>Bluetooth preamp PCB layout and enclosure clearance</h1>
+            <p class="hero-text">Six film capacitors rise 39.5 mm above this audio board. They set the clearance under the lid. On the other side, a regulator lead sets the clearance to the base.</p>
+            <a class="btn btn-secondary" href="/#pcb-model">Rotate the board in 3D</a>
+            <p class="hero-location">Independent board design by Michael Bradshaw</p>
+          </div>
+          <img src="/assets/pcb-render.png?v=1" width="2100" height="2190" alt="Component-side view with the Bluetooth module beside J1, two pairs of RCA sockets along the upper edge and six film capacitors" />
+        </div>
+      </div>
+    </header>
+    <div class="site-width detail-layout">
+      <article class="detail-content" aria-label="PCB design case study">
+        <section class="detail-section">
+          <h2>Start with the connectors</h2>
+          <p>The RCA sockets sit along one edge of the board. The Bluetooth module and J1 pin header sit near the opposite edge, while the power components follow the stepped outline on the right. The top view shows which way the sockets face and where a panel would need openings.</p>
+          <p>A panel opening also needs clearance for the mating plug. For a fit review, bring the plug drawing or a sample together with the enclosure and PCB files. That lets us check how the plug approaches the socket after the board is mounted.</p>
+        </section>
+        <section class="detail-section">
+          <h2>Measure from both faces of the PCB</h2>
+          <p>The bare board spans 177.8 × 185.4 mm in plan. Viewed edge-on, capacitors C28, C33, C34, C36, C37 and C39 share the highest point. The lowest modeled point is a through-hole lead on U1, about 4.5 mm below the solder side.</p>
+          <figure class="case-diagram">
+            <img src="/assets/bluetooth-preamp-side-elevation.png" width="1479" height="529" loading="lazy" alt="Side projection of the assembled board, with the tallest film capacitors highlighted and 45.3 mm measured from the lowest lead to the capacitor tops" />
+            <figcaption>Side view from the board’s 3D model. The assembled height includes the PCB, the tallest capacitor bodies and the leads underneath.</figcaption>
+          </figure>
+          <p>At 45.3 mm tall, the modeled assembly already exceeds a 45 mm internal cavity before mounting hardware or tolerances enter the calculation. For an enclosure drawing, check the standoff height under the board and specify a separate gap above the capacitors. The final fit check uses the actual parts, trimmed leads and enclosure.</p>
+        </section>
+      </article>
+      <aside class="detail-sidebar" aria-label="Board dimensions and project inquiries">
+        <h2>Model dimensions</h2>
+        <dl class="detail-rates">
+          <dt>Bare board outline</dt><dd>177.8 × 185.4 mm</dd>
+          <dt>Above the component side</dt><dd>39.5 mm</dd>
+          <dt>Below the solder side</dt><dd>4.5 mm</dd>
+          <dt>Overall assembly height</dt><dd>45.3 mm</dd>
+        </dl>
+        <p>Planning your own enclosure? Send the available board model, enclosure drawing and connector details.</p>
+        <a class="btn btn-primary" href="/#contact">Discuss a board fit review</a>
+        <p class="detail-small">Explore <a href="/pcb-design/">PCB design</a> and <a href="/cad-enclosures-fixtures/">enclosure design</a>. Client-site appointments are available near Hamilton, Ontario, with remote reviews worldwide.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="site-width footer-content"><p>© 2026 MB Designs Work. All rights reserved.</p><p><a href="/#projects">More projects</a> · <a href="/#contact">Contact</a></p></div>
+  </footer>
+</body>
+</html>
